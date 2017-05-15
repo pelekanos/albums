@@ -79,7 +79,12 @@ a {
 }
 
 #hi ul {
-    float: right
+    float: right;
+    display: inline-block;
+}
+
+form {
+    display: inline-block;
 }
 
 .login {
