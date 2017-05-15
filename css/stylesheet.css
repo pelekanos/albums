@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+body {
+    background-color: aquamarine
+}
+
+
+/* Lists/navigation/menus */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+#hi ul {
+    float: right
+}
+
+.login {
+    float: left;
+    padding: 4px;
+}
+
+.login a {
+    color: red;
+    font-weight: bold;
+}
+
+#menu {
+    background-color: yellow;
+    padding: 0px;
+    height: 50px;
+}
+
+.menu {
+    float: left;
+}
+
+.menu a {
+    padding-right: 8px
+}
+
+.menu:hover {
+    border: 2px solid black;
+}
+
+.menu {
+    font-weight: bold;
+}
+
+
+footer ul li {
+    text-align: center;
+}
+
+#hi {
+    background-image: url(../images/head.jpg);
+    height: 200px;
+}
+
+section p {
+    text-align: center;
+}
+
+.cover {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+/* section*/
+table {
+    margin-right: auto;
+}
+.table-1{
+    float: left;
+    color:#c61b1b;
+    font-weight: 400;
+}
+table-2{
+    float:right;
+    color:#c61b1b;
+    font-weight: 400;
+}
+/*aside */
+
+footer {
+    border-top: 2px solid black;
+}
+
+.search-button {
+    display: inline-block;
+    color:red;
+}
