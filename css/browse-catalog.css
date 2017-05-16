@@ -1,0 +1,36 @@
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+.flex-item:nth-child(1) {
+    background-image: url(../images/damn.jpg);
+    background-size: 300px 300px;
+}
+
+.browse-cover {
+    width: 100%;
+    display: block;
+}
+
+.flex-item p {
+    float: left;
+    color: blue;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 270px;
+    background-color: aliceblue;
+}
+
+.flex-item:hover {
+    display: inline-block;
+}
