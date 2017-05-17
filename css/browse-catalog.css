@@ -10,6 +10,7 @@
     width: 300px;
     height: 300px;
     margin: 10px;
+    border-radius: 10px;
 }
 
 .flex-item:nth-child(1) {
@@ -29,8 +30,14 @@
     font-size: 30px;
     margin-top: 270px;
     background-color: aliceblue;
+    //visibility: hidden;
 }
 
-.flex-item:hover {
-    display: inline-block;
+.flex-text {
+    visibility: hidden;
+}
+
+
+.flex-text:hover; {
+    visibility: visible;
 }

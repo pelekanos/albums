@@ -58,7 +58,7 @@
 }
 
 body {
-    background-color: aquamarine
+    background-color: #08D9D6;
 }
 
 
@@ -76,6 +76,7 @@ li {
 
 a {
     text-decoration: none;
+    color:#FF2E63;
 }
 
 #hi ul {
@@ -93,18 +94,26 @@ form {
 }
 
 .login a {
-    color: red;
+    color: #FF2E63;
     font-weight: bold;
 }
 
 #menu {
-    background-color: yellow;
+    background-color: #252A34;
     padding: 0px;
     height: 50px;
 }
 
 .menu {
     float: left;
+    border-right: 3px solid #FF2E63;
+}
+
+.menu:last-child{
+    border:none;
+}
+.menu li {
+    border:none;
 }
 
 .menu a {
@@ -112,11 +121,24 @@ form {
 }
 
 .menu:hover {
-    border: 2px solid black;
+    border: 2px solid #FF2E63;
 }
 
 .menu {
     font-weight: bold;
+}
+
+.menu ul {
+    position: absolute;
+    //display: none;
+    background-color: #252A34;
+    
+}
+.menu:hover ul {
+    display: block;
+}
+.menu ul li{
+    display: block;
 }
 
 
@@ -144,18 +166,22 @@ table {
 }
 .table-1{
     float: left;
-    color:#c61b1b;
+    color:#FF2E63;
     font-weight: 400;
 }
-table-2{
+.table-2{
     float:right;
-    color:#c61b1b;
+    color:#FF2E63;
     font-weight: 400;
 }
 /*aside */
 
 footer {
-    border-top: 2px solid black;
+    border-top: 2px solid #FF2E63;
+}
+
+footer div:first-child ul{
+    border-right: 2px solid #252A34;
 }
 
 .search-button {
