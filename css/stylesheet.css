@@ -76,10 +76,18 @@ li {
 
 a {
     text-decoration: none;
-    color:#FF2E63;
+    color: #FF2E63;
 }
 
-#hi ul {
+
+/**************  header  ***********/
+
+header {
+    background-image: url(../images/head.jpg);
+    height: 200px;
+}
+
+header ul {
     float: right;
     display: inline-block;
 }
@@ -98,58 +106,60 @@ form {
     font-weight: bold;
 }
 
-#menu {
+
+/**************  nav  ***********/
+
+nav div {
     background-color: #252A34;
-    padding: 0px;
-    height: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .menu {
     float: left;
     border-right: 3px solid #FF2E63;
+    font-weight: bold;
+    position: relative;
+    width: 150px;
+    height: 50px;
 }
 
-.menu:last-child{
-    border:none;
-}
-.menu li {
-    border:none;
+.menu:last-child {
+    border: none;
 }
 
-.menu a {
-    padding-right: 8px
+.menu p {
+    text-align: center;
+    line-height: 50px;
 }
 
 .menu:hover {
     border: 2px solid #FF2E63;
 }
 
-.menu {
+
+.menu-2 {
     font-weight: bold;
+    width: 150px;
+    height: 40px;
 }
 
 .menu ul {
     position: absolute;
-    //display: none;
+    display: none;
     background-color: #252A34;
-    
 }
+
 .menu:hover ul {
     display: block;
 }
-.menu ul li{
+
+.menu ul li {
     display: block;
 }
 
 
-footer ul li {
-    text-align: center;
-}
-
-#hi {
-    background-image: url(../images/head.jpg);
-    height: 200px;
-}
+/**************  section  ***********/
 
 section p {
     text-align: center;
@@ -160,31 +170,46 @@ section p {
     display: block;
     margin: 0 auto;
 }
-/* section*/
+
 table {
     margin-right: auto;
 }
-.table-1{
+
+.table-1 {
     float: left;
-    color:#FF2E63;
+    color: #FF2E63;
     font-weight: 400;
 }
-.table-2{
-    float:right;
-    color:#FF2E63;
+
+.table-2 {
+    float: right;
+    color: #FF2E63;
     font-weight: 400;
 }
-/*aside */
+
+
+/**************  aside  ***********/
+
+
+/**************  footer  ***********/
 
 footer {
     border-top: 2px solid #FF2E63;
 }
 
-footer div:first-child ul{
+footer div:first-child ul {
     border-right: 2px solid #252A34;
+}
+
+footer ul li {
+    text-align: center;
 }
 
 .search-button {
     display: inline-block;
-    color:red;
+    color: red;
+}
+
+footer ul li {
+    text-align: center;
 }
