@@ -122,10 +122,6 @@ nav div {
     line-height: 50px;
 }
 
-.menu:hover {
-    border: 2px solid #FF2E63;
-}
-
 
 .menu-2 {
     font-weight: bold;
@@ -136,7 +132,6 @@ nav div {
 .menu ul {
     position: absolute;
     display: none;
-    background-color: #252A34;
 }
 
 .menu:hover ul {
@@ -179,13 +174,11 @@ table {
 
 .table-1 {
     float: left;
-    color: #FF2E63;
     font-weight: 400;
 }
 
 .table-2 {
     float: right;
-    color: #FF2E63;
     font-weight: 400;
 }
 
@@ -237,7 +230,6 @@ section li:hover span {
 
 .full-stars {
     display: none;
-    color: yellow;
 }
 
 /**************  aside  ***********/
@@ -245,7 +237,6 @@ section li:hover span {
 aside div {
     width: 50px;
     height: 50px;
-    background-color: red;
     cursor:pointer;
     position: fixed;
     border-radius: 0px 10px 10px 0px;
@@ -259,7 +250,6 @@ aside div i {
 }
 
 aside div ul{
-    background-color: red;
     position: absolute;
     display: none;
 }
@@ -281,29 +271,12 @@ aside div:hover {
 
 /**************  footer  ***********/
 
-footer {
-    border-top: 2px solid #FF2E63;
-}
-
-footer div:first-child ul {
-    border-right: 2px solid #FF2E63;
-}
-
 footer ul li {
     text-align: center;
 }
 
-.search-button {
-    display: inline-block;
-    color: red;
-}
-
 footer ul li {
     text-align: center;
-}
-
-footer a {
-    color:#252A34;
 }
 
 
@@ -328,11 +301,21 @@ footer a {
     height: 300px;
     margin: 10px;
     border-radius: 10px;
+    background-size: 300px 300px;
 }
+
+
 
 .flex-item:nth-child(1) {
     background-image: url(../images/damn.jpg);
-    background-size: 300px 300px;
+}
+
+.flex-item:nth-child(2) {
+    background-image: url(../images/godfather.jpg);
+}
+
+.flex-item:nth-child(3) {
+    background-image: url(../images/forever.jpg);
 }
 
 .browse-cover {
@@ -347,7 +330,7 @@ footer a {
     font-size: 30px;
     margin-top: 270px;
     background-color: aliceblue;
-    //visibility: hidden;
+    display: none;
 }
 
 .flex-text {
@@ -355,36 +338,12 @@ footer a {
 }
 
 
-.flex-text:hover; {
-    visibility: visible;
+.flex-item:hover {
+    filter: blur(3px);
+}
+
+.flex-item:hover p {
+    display: inline-block;
 }
 /* colors */
-
-body {
-    background-color: #08D9D6;
-}
-
-a {
-    color: #FF2E63;
-}
-
-nav div {
-    background-color: #252A34;
-}
-
-.menu {
-    border-right: 3px solid #FF2E63;
-}
-
-tr:nth-child(even) {
-    background-color: #252A34;
-}
-
-section li span {
-    background-color: #252A34;
-}
-
-section li span {
-    color: #FF2E63;
-}
 

@@ -1,0 +1,72 @@
+/*************primary**********/
+
+body {
+    background-color: #08D9D6;
+}
+
+
+/******* 2nd ***************/
+
+
+nav div {
+    background-color: #252A34;
+}
+
+tr:nth-child(even) {
+    background-color: #252A34;
+}
+
+section li span {
+    background-color: #252A34;
+}
+
+.menu ul {
+    background-color: #252A34;
+}
+
+footer a {
+    color:#252A34;
+}
+
+
+/******* 3rd *******/
+
+.menu:hover {
+    border: 2px solid #FF2E63;
+}
+
+
+a {
+    color: #FF2E63;
+}
+
+.menu {
+    border-right: 3px solid #FF2E63;
+}
+
+
+section li span {
+    color: #FF2E63;
+}
+
+
+section td {
+    color: #FF2E63;
+}
+
+aside div {
+    background-color: #FF2E63;
+}
+
+aside div ul{
+    background-color: #FF2E63;
+}
+
+footer div:first-child ul {
+    border-right: 2px solid #FF2E63;
+}
+
+/***** rest ********/
+.full-stars {
+    color: yellow;
+}

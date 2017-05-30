@@ -9,18 +9,14 @@
     <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Mono|Roboto+Slab|Ubuntu" rel="stylesheet">
     <script src="https://use.fontawesome.com/a6116d5bec.js"></script>
+    <script src="../JavaScript/JavaScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/theme-1.css" id="theme">
 </head>
 
 <body>
 
-    <header>
-        <div id="hi">
-            <form>
-                <input type="text" value="Αναζητηση">
-                <div class="search-button">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </div>
-            </form>
+  <header>
+        <div>
             <ul>
                 <li class="login"><a href="#">Log In <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
                 <li class="login"><a href="#">Sign Up <i class="fa fa-user-plus" aria-hidden="true"></i></a></li>
@@ -28,27 +24,33 @@
             </ul>
         </div>
     </header>
+    
+    
     <nav>
         <div>
             <ul>
-                <li class="menu"><p><a href="../index.html">Archiki <i class="fa fa-home" aria-hidden="true"></i></a></p></li>
-                <li class="menu"><p><a href="../html/browse-catalog.html">Δίσκοι Βινυλίου</a></p>
+                <li class="menu">
+                    <p><a href="../index.html">Aρχική <i class="fa fa-home" aria-hidden="true"></i></a></p>
+                </li>
+                <li class="menu">
+                    <p><a href="./browse-catalog.html">Δίσκοι Βινυλίου/CD</a></p>
                     <ul>
                         <li class="menu-2"><a href="#">1</a></li>
                         <li class="menu-2"><a href="#">2</a></li>
                         <li class="menu-2"><a href="#">3</a></li>
                     </ul>
                 </li>
-                <li class="menu"><p><a href="#">Μουσικά CD - LP</a></p>
-                    <ul>
-                        <li class="menu-2"><a href="#">1</a></li>
-                        <li class="menu-2"><a href="#">2</a></li>
-                        <li class="menu-2"><a href="#">3</a></li>
-                    </ul>
+                <li class="menu" id="search-2">
+                    <form><input type="text" value="Αναζητηση" /> </form>
+                </li>
+                <li class="menu" id="search-1" onclick="searchFunction()">
+                    <p><a href="#">Αναζητηση <i class="fa fa-search" aria-hidden="true"></i></a></p>
                 </li>
             </ul>
         </div>
     </nav>
+    
+    
     <section class="col-12">
         <div class="flex-container">
             <div class="flex-item">
@@ -74,8 +76,20 @@
         </div>
 
     </section>
+    
+    
     <aside>
+        <div>
+            <i class="fa fa-bars" aria-hidden="true" style="font-size:40px;"></i>
+            <ul>
+                <li onclick="colorChange(1)">style 1</li>
+                <li onclick="colorChange(2)">style 2</li>
+                <li onclick="colorChange(3)">style 3</li>
+            </ul>
+        </div>
     </aside>
+    
+    
     <footer class="12" id="bottom">
         <div class="col-6">
             <ul>

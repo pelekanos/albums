@@ -53,3 +53,28 @@ function ratingStars(x) {
 
     }
 }
+
+var main_page = false;
+
+function colorChange (y, main_page) {
+    if (y === 1) {
+        document.getElementById('theme').href = '../css/theme-1.css';
+        if (main_page === true) {
+            document.getElementById('theme').href = 'css/theme-1.css';
+        }
+    }
+    
+    if (y === 2) {
+        document.getElementById('theme').href = '../css/theme-2.css';
+        if (main_page === true) {
+            document.getElementById('theme').href = 'css/theme-2.css';
+        }
+    }
+    
+    if (y === 3) {
+        document.getElementById('theme').href = './css/theme-3.css';
+        if (main_page === true) {
+            document.getElementById('theme').href = 'css/theme-3.css';
+        }
+    }
+}
