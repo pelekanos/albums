@@ -2,6 +2,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Ubuntu;
+    border: 1px dolid black;
 }
 
 .col-1 {
@@ -57,10 +58,6 @@
     padding: 15px;
 }
 
-body {
-    background-color: #08D9D6;
-}
-
 
 /* Lists/navigation/menus */
 
@@ -76,7 +73,6 @@ li {
 
 a {
     text-decoration: none;
-    color: #FF2E63;
 }
 
 
@@ -102,7 +98,6 @@ form {
 }
 
 .login a {
-    color: #FF2E63;
     font-weight: bold;
 }
 
@@ -110,22 +105,16 @@ form {
 /**************  nav  ***********/
 
 nav div {
-    background-color: #252A34;
     display: flex;
     justify-content: center;
 }
 
 .menu {
     float: left;
-    border-right: 3px solid #FF2E63;
     font-weight: bold;
     position: relative;
     width: 150px;
     height: 50px;
-}
-
-.menu:last-child {
-    border: none;
 }
 
 .menu p {
@@ -158,6 +147,20 @@ nav div {
     display: block;
 }
 
+#search-2 {
+    display: none;
+}
+
+#search-2 form input{
+    width: 150px;
+    height: 20px;
+    position: absolute;
+    
+}
+
+#search-1, #search-2 {
+    border: none;
+}
 
 /**************  section  ***********/
 
@@ -166,9 +169,8 @@ section p {
 }
 
 .cover {
-    width: 80%;
-    display: block;
-    margin: 0 auto;
+    width: 60%;
+    display: inline inline-block;
 }
 
 table {
@@ -187,9 +189,95 @@ table {
     font-weight: 400;
 }
 
+#product-details table {
+    width: 100%
+}
+
+
+#product-details  tr{
+    font-size: 20px
+}
+
+section ul {
+    display: inline-block;
+    vertical-align: top;
+    float:right;
+}
+
+section li {
+    position: relative;
+    margin-bottom: 35%;
+}
+
+section li span {
+    visibility: hidden;
+    width: 120px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+
+
+section li:hover span {
+    visibility: visible;
+}
+
+.rating-stars {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.rating-stars i {
+    font-size:30px;
+}
+
+.full-stars {
+    display: none;
+    color: yellow;
+}
 
 /**************  aside  ***********/
 
+aside div {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    cursor:pointer;
+    position: fixed;
+    border-radius: 0px 10px 10px 0px;
+}
+
+aside div i {
+    width: 60px;
+    height: 50px;
+    font size: 100px;
+    position: relative;
+}
+
+aside div ul{
+    background-color: red;
+    position: absolute;
+    display: none;
+}
+
+aside li {
+    width: 60px;
+    height: 50px;
+    border: 2px solid black;
+}
+
+aside div:hover ul {
+    display: block;
+}
+
+aside div:hover {
+    border-radius: 0px;
+    width: 60px;
+}
 
 /**************  footer  ***********/
 
@@ -198,7 +286,7 @@ footer {
 }
 
 footer div:first-child ul {
-    border-right: 2px solid #252A34;
+    border-right: 2px solid #FF2E63;
 }
 
 footer ul li {
@@ -213,3 +301,90 @@ footer ul li {
 footer ul li {
     text-align: center;
 }
+
+footer a {
+    color:#252A34;
+}
+
+
+/*main page only*/
+
+#main-content {
+    height: 600px;
+}
+
+/*browse catalog style only */
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.flex-item:nth-child(1) {
+    background-image: url(../images/damn.jpg);
+    background-size: 300px 300px;
+}
+
+.browse-cover {
+    width: 100%;
+    display: block;
+}
+
+.flex-item p {
+    float: left;
+    color: blue;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 270px;
+    background-color: aliceblue;
+    //visibility: hidden;
+}
+
+.flex-text {
+    //visibility: hidden;
+}
+
+
+.flex-text:hover; {
+    visibility: visible;
+}
+/* colors */
+
+body {
+    background-color: #08D9D6;
+}
+
+a {
+    color: #FF2E63;
+}
+
+nav div {
+    background-color: #252A34;
+}
+
+.menu {
+    border-right: 3px solid #FF2E63;
+}
+
+tr:nth-child(even) {
+    background-color: #252A34;
+}
+
+section li span {
+    background-color: #252A34;
+}
+
+section li span {
+    color: #FF2E63;
+}
+

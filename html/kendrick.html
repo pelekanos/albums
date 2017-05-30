@@ -9,18 +9,13 @@
     <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Mono|Roboto+Slab|Ubuntu" rel="stylesheet">
     <script src="https://use.fontawesome.com/a6116d5bec.js"></script>
+    <script src="../JavaScript/JavaScript.js"></script>
 </head>
 
 <body>
 
     <header>
         <div>
-            <form>
-                <input type="text" value="Αναζητηση">
-                <div class="search-button">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </div>
-            </form>
             <ul>
                 <li class="login"><a href="#">Log In <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
                 <li class="login"><a href="#">Sign Up <i class="fa fa-user-plus" aria-hidden="true"></i></a></li>
@@ -28,31 +23,55 @@
             </ul>
         </div>
     </header>
-   <nav>
+
+
+    <nav>
         <div>
             <ul>
-                <li class="menu"><p><a href="#">Archiki <i class="fa fa-home" aria-hidden="true"></i></a></p></li>
-                <li class="menu"><p><a href="../html/browse-catalog.html">Δίσκοι Βινυλίου</a></p>
+                <li class="menu">
+                    <p><a href="#">Aρχική <i class="fa fa-home" aria-hidden="true"></i></a></p>
+                </li>
+                <li class="menu">
+                    <p><a href="html/browse-catalog.html">Δίσκοι Βινυλίου/CD</a></p>
                     <ul>
                         <li class="menu-2"><a href="#">1</a></li>
                         <li class="menu-2"><a href="#">2</a></li>
                         <li class="menu-2"><a href="#">3</a></li>
                     </ul>
                 </li>
-                <li class="menu"><p><a href="#">Μουσικά CD - LP</a></p>
-                    <ul>
-                        <li class="menu-2"><a href="#">1</a></li>
-                        <li class="menu-2"><a href="#">2</a></li>
-                        <li class="menu-2"><a href="#">3</a></li>
-                    </ul>
+                <li class="menu" id="search-2">
+                    <form><input type="text" value="Αναζητηση" /> </form>
+                </li>
+                <li class="menu" id="search-1" onclick="searchFunction()">
+                    <p><a href="#">Αναζητηση <i class="fa fa-search" aria-hidden="true"></i></a></p>
                 </li>
             </ul>
         </div>
     </nav>
-    <section class="col-12">
+
+    <aside>
+        <div>
+            <i class="fa fa-bars" aria-hidden="true" style="font-size:40px;"></i>
+            <ul>
+                <li>style 1</li>
+                <li>style 2</li>
+                <li>style 3</li>
+            </ul>
+        </div>
+    </aside>
+
+
+    <section class="col-12" id="product-details">
         <div class="col-2"></div>
         <div class="col-8">
-            <img class="cover" src="../images/damn.jpg" />
+            <div>
+                <img class="cover" src="../images/damn.jpg" />
+                <ul>
+                    <li><i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:35px;cursor:pointer"></i><span>Αγορα</span></li>
+                    <li><i class="fa fa-heart" aria-hidden="true" style="font-size:35px;cursor:pointer"></i><span>Προσθηκη στην Whishlist</span></li>
+                </ul>
+            </div>
+
             <table>
                 <tr>
                     <td class="table-1">Album Title</td>
@@ -73,11 +92,53 @@
 
 
             </table>
-            <div class="col-2"></div>
+            <div id="rating">
+                <div class="rating-stars" id="star-1">
+                    <i class="fa fa-star-o" aria-hidden="true" onclick="ratingStars(1)"></i>
+                </div>
+                
+                <div class="rating-stars full-stars" id="star-2">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                
+                <div class="rating-stars" id="star-3">
+                    <i class="fa fa-star-o" aria-hidden="true" onclick="ratingStars(2)"></i>
+                </div>
+                
+                <div class="rating-stars full-stars" id="star-4">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                
+                <div class="rating-stars" id="star-5">
+                    <i class="fa fa-star-o" aria-hidden="true" onclick="ratingStars(3)"></i>
+                </div>
+                
+                <div class="rating-stars full-stars" id="star-6">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                
+                <div class="rating-stars" id="star-7">
+                    <i class="fa fa-star-o" aria-hidden="true" onclick="ratingStars(4)"></i>
+                </div>
+                
+                <div class="rating-stars full-stars" id="star-8">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                
+                <div class="rating-stars" id="star-9">
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                
+                <div class="rating-stars full-stars" id="star-10">
+                    <i class="fa fa-star" aria-hidden="true" onclick="ratingStars(5)"></i>
+                </div>
+            </div>
         </div>
+        <div class="col-2"></div>
+
     </section>
-    <aside>
-    </aside>
+
+
     <footer class="12" id="bottom">
         <div class="col-6">
             <ul>
