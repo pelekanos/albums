@@ -1,0 +1,84 @@
+/*************primary**********/
+
+body {
+    background-color: #AACFD0;
+}
+
+
+/******* 2nd ***************/
+
+
+nav div {
+    background-color: #1F4E5F;
+}
+
+tr:nth-child(even) {
+    background-color: #1F4E5F;
+}
+
+section li span {
+    background-color: #1F4E5F;
+}
+
+.menu ul {
+    background-color: #1F4E5F;
+}
+
+
+/******* 3rd *******/
+
+.menu:hover {
+    border: 2px solid #79A8A9;
+}
+
+
+a {
+    color: #79A8A9;
+}
+
+.menu {
+    border-right: 3px solid #79A8A9;
+}
+
+
+section li span {
+    color: #79A8A9;
+}
+
+
+section td {
+    color: #79A8A9;
+}
+
+aside div {
+    background-color: #79A8A9;
+}
+
+aside div ul{
+    background-color: #79A8A9;
+}
+
+footer div:first-child ul {
+    border-right: 2px solid #79A8A9;
+}
+
+section ul li i {
+    color :#FFCEBB
+}
+
+/***** rest ********/
+.full-stars {
+    color: #FFCEBB;
+}
+
+footer a {
+    color:#FFCEBB;
+}
+
+section ul li i {
+    color :#FFCEBB
+}
+
+aside i {
+    color :#1F4E5F
+}

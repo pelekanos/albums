@@ -1,0 +1,84 @@
+/*************primary**********/
+
+body {
+    background-color: #27323A;
+}
+
+
+/******* 2nd ***************/
+
+
+nav div {
+    background-color: #29A19C;
+}
+
+tr:nth-child(even) {
+    background-color: #29A19C;
+}
+
+section li span {
+    background-color: #29A19C;
+}
+
+.menu ul {
+    background-color: #29A19C;
+}
+
+
+/******* 3rd *******/
+
+.menu:hover {
+    border: 2px solid #435055;
+}
+
+
+a {
+    color: #435055;
+}
+
+.menu {
+    border-right: 3px solid #435055;
+}
+
+
+section li span {
+    color: #435055;
+}
+
+
+section td {
+    color: #435055;
+}
+
+aside div {
+    background-color: #435055;
+}
+
+aside div ul{
+    background-color: #435055;
+}
+
+footer div:first-child ul {
+    border-right: 2px solid #435055;
+}
+
+section ul li i {
+    color :#FFCEBB
+}
+
+/***** rest ********/
+.full-stars {
+    color: #FFCEBB;
+}
+
+footer a {
+    color:#FFCEBB;
+}
+
+section ul li i {
+    color :#FFCEBB
+}
+
+aside i {
+    color :#29A19C
+}
