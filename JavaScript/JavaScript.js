@@ -77,4 +77,40 @@ function colorChange (y, main_page) {
             document.getElementById('theme').href = 'css/theme-3.css';
         }
     }
+    
+     if (y === 4) {
+        document.getElementById('theme').href = '../css/theme-4.css';
+    }
+    
+     if (y === 5) {
+        document.getElementById('theme').href = '../css/theme-5.css';
+    }
+    
+     if (y === 6) {
+        document.getElementById('theme').href = '../css/theme-6.css';
+    }
+    
+     if (y === 7) {
+        document.getElementById('theme').href = '../css/theme-7.css';
+    }
+    
+     if (y === 8) {
+        document.getElementById('theme').href = '../css/theme-8.css';
+    }
+    
+     if (y === 9) {
+        document.getElementById('theme').href = '../css/theme-9.css';
+    }
+    
+     if (y === 10) {
+        document.getElementById('theme').href = '../css/theme-10.css';
+    }
+    
+     if (y === 11) {
+        document.getElementById('theme').href = '../css/theme-11.css';
+    }
+    
+     if (y === 12) {
+        document.getElementById('theme').href = '../css/theme-12.css';
+    }
 }
