@@ -72,7 +72,7 @@ function colorChange (y, main_page) {
     }
     
     if (y === 3) {
-        document.getElementById('theme').href = './css/theme-3.css';
+        document.getElementById('theme').href = '../css/theme-3.css';
         if (main_page === true) {
             document.getElementById('theme').href = 'css/theme-3.css';
         }
